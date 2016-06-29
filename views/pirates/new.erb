@@ -1,1 +1,19 @@
-<h1>Make your form here</h1>
+<h1>Ahoy Matey! Who are you and what ships do you raid with?</h1>
+
+<form action="/pirates" method="POST">
+  <label>Pirate Info</label>
+  <label>Name:</label> <input type="text" name="pirate[name]">
+  <label>Height:</label> <input type="text" name="pirate[height]">
+  <label>Weight:</label> <input type="text" name="pirate[weight]">
+
+  <label>First Ship</label>
+  <label>Ship Name:</label> <input id="ship_name_1" type="text" name="pirate[ships][][name]">
+  <label>Ship Type:</label> <input id="ship_type_1" type="text" name="pirate[ships][][type]">
+  <label>Ship Booty:</label> <input id="ship_booty_1" type="text" name="pirate[ships][][booty]">
+
+  <label>Second Ship</label>
+  <label>Ship Name:</label> <input id="ship_name_2" type="text" name="pirate[ships][][name]">
+  <label>Ship Type:</label> <input id="ship_type_2" type="text" name="pirate[ships][][type]">
+  <label>Ship Booty:</label> <input id="ship_booty_2" type="text" name="pirate[ships][][booty]">
+  <input type="submit" name="submit" value="Submit">
+</form>
